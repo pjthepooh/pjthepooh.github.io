@@ -10,12 +10,14 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta property="og:title" content="PJ the Pooh"/>
-<meta name="twitter:title" content="PJ the Pooh">
-<meta property="og:url" content="" />
+<meta property="og:title" content="Search · PJ the Pooh"/>
+<meta name="twitter:title" content="Search · PJ the Pooh">
+<meta property="og:url" content="/search.html" />
+<meta property="og:description" content="Search results for PJ the Pooh blog" />
+<meta name="twitter:description" content="Search results for PJ the Pooh blog">
 <meta property="og:site_name" content="PJ the Pooh" />
 <meta property="og:article:author" content="PJ" />
-        <title>PJ the Pooh
+        <title>Search · PJ the Pooh
 </title>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
@@ -37,7 +39,7 @@
                     <a class="brand" href="/"><span class=site-name>PJ the Pooh</span></a>
                     <div class="nav-collapse collapse">
                         <ul class="nav pull-right top-menu">
-                            <li  class="active"><a href="">Home</a></li>
+                            <li ><a href="">Home</a></li>
                             <li ><a href="/pages/../about.html">About</a></li>
                             <li ><a href="/categories.html">Categories</a></li>
                             <li ><a href="/tags.html">Tags</a></li>
@@ -52,32 +54,11 @@
             <div class="row-fluid">
                 <div class="span1"></div>
                 <div class="span10">
-<div class="row-fluid">
-
-    <div class="row-fluid">
-
+<article>
+    <div class="span8 offset2">
+        <div id="tipue_search_content"><div id="tipue_search_loading"></div></div>
     </div>
-
-    <div class="row-fluid">
-        <div class="span8 offset2">
-            <header>
-            <h1 id="recent-posts">Recent Posts <a id="allposts" href="/archives.html">all posts</a></h1>
-            </header>
-        <div class="recent-posts">
-            <article>
-                <a href="/fall-off-the-bike.html">Fall Off the Bike  </a>
-                <section>
-                    posted in
-                <a href="/categories.html#life-ref">life</a>
-                <div class="recent-posts-time">
-                <time pubdate="pubdate" datetime="2016-09-17T20:20:00-07:00">Sat 17 September 2016</time>
-                </div>
-                </section>
-            </article>
-        </div>
-        </div>
-    </div>
-</div>
+</article>
                 </div>
                 <div class="span1"></div>
             </div>
@@ -91,14 +72,19 @@
         <!--<li class="elegant-power">Powered by <a href="http://getpelican.com/" title="Pelican Home Page">Pelican</a>. Theme: <a href="http://oncrashreboot.com/pelican-elegant" title="Theme Elegant Home Page">Elegant</a> by <a href="http://oncrashreboot.com" title="Talha Mansoor Home Page">Talha Mansoor</a></li>-->
     </ul>
 </div>
-</footer>        <script src="http://code.jquery.com/jquery.min.js"></script>
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-        <script>
-            function validateForm(query)
-            {
-                return (query.length > 0);
-            }
-        </script>
+</footer><script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="/theme/tipuesearch/tipuesearch_set.js"></script>
+<script type="text/javascript" src="/theme/tipuesearch/tipuesearch.min.js"></script>
+<script>
+$(document).ready(function() {
+     $('#tipue_search_input').tipuesearch({
+             'mode' : 'json',
+         'show': 10,
+         'newWindow': false,
+             'contentLocation': 'tipuesearch_content.json'
+     });
+});
+</script>
     </body>
     <!-- Theme: Elegant built for Pelican
     License : http://oncrashreboot.com/pelican-elegant -->
