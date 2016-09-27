@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>http://www.pjthepooh.com/</loc>
-<lastmod>2016-09-25T12:33:01-00:00</lastmod>
+<lastmod>2016-09-27T01:17:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://www.pjthepooh.com/archives.html</loc>
-<lastmod>2016-09-25T12:33:01-00:00</lastmod>
+<lastmod>2016-09-27T01:17:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://www.pjthepooh.com/tags.html</loc>
-<lastmod>2016-09-25T12:33:01-00:00</lastmod>
+<lastmod>2016-09-27T01:17:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>http://www.pjthepooh.com/categories.html</loc>
-<lastmod>2016-09-25T12:33:01-00:00</lastmod>
+<lastmod>2016-09-27T01:17:54-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -34,6 +34,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://www.pjthepooh.com/pages/../about.html</loc>
 <lastmod>2016-09-14T19:30:00-07:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>http://www.pjthepooh.com/i-chose-pelican.html</loc>
+<lastmod>2016-09-25T20:20:00-07:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
