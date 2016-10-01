@@ -76,6 +76,7 @@
 <li><a href="#intuition">Intuition</a></li>
 <li><a href="#step-by-step-guide">Step-by-Step Guide</a><ul>
 <li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#quick-start">Quick Start</a></li>
 </ul>
 </li>
 </ul>
@@ -91,14 +92,45 @@
 <p>Ok. Let's get started with Pelican here.</p>
 <h1 id="step-by-step-guide">Step-by-Step Guide</h1>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>Though it is optional, I recommend the project is built under a virtual environment. Additionally, you need to install <code>pelican</code>, <code>markdown</code>. For example, I'm going to build a web on this directory  <code>~/pelican_demo/</code>:</p>
+<p>Though it is optional, I recommend the project is built under a <a href="http://docs.python-guide.org/en/latest/dev/virtualenvs/">virtual environment</a>. Additionally to <code>Python</code>, which I assume you already installed, you need to install <code>pelican</code>, <code>markdown</code>. For example, I'm going to build a web on this directory  <code>~/pelican_demo/</code>:</p>
 <div class="highlight"><pre><span></span>mkdir ~/pelican_demo
 <span class="nb">cd</span> ~/pelican_demo
+mkdir src
 </pre></div>
-<div class="highlight"><pre><span></span><span class="nb">int</span> <span class="n">sample_function</span> <span class="p">(</span><span class="n">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span> <span class="p">(</span><span class="s2">"This is a sample function"</span><span class="p">);</span>
-    <span class="k">return</span> <span class="mi">0</span>
-<span class="p">}</span>
+<p>We next generate a virtual environment and then build necessary libraries within it.</p>
+<div class="highlight"><pre><span></span>virtualenv env
+<span class="nb">source</span> env/bin/activate
+pip install pelican markdown
+</pre></div>
+<p>Once above packages are installed successfully, we can move to the next step.The src (source code) is where we are going to the website content. W</p>
+<h2 id="quick-start">Quick Start</h2>
+<p>Pelican provides a quick start function, <code>pelican-quickstart</code>, that generates a basic framework skeleton. </p>
+<div class="highlight"><pre><span></span>$ pelican-quickstart
+Welcome to pelican-quickstart v3.6.3.
+
+This script will <span class="nb">help</span> you create a new Pelican-based website.
+
+Please answer the following questions so this script can generate the files
+needed by Pelican.
+
+
+&gt; Where <span class="k">do</span> you want to create your new web site? <span class="o">[</span>.<span class="o">]</span>
+&gt; What will be the title of this web site? Pelican Demo
+&gt; Who will be the author of this web site? PJ
+&gt; What will be the default language of this web site? <span class="o">[</span>en<span class="o">]</span>
+&gt; Do you want to specify a URL prefix? e.g., http://example.com   <span class="o">(</span>Y/n<span class="o">)</span> n
+&gt; Do you want to <span class="nb">enable</span> article pagination? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; How many articles per page <span class="k">do</span> you want? <span class="o">[</span>10<span class="o">]</span> 8
+&gt; What is your <span class="nb">time</span> zone? <span class="o">[</span>Europe/Paris<span class="o">]</span> America/Los_Angeles
+&gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; Do you want an auto-reload <span class="p">&amp;</span> simpleHTTP script to assist with theme and site development? <span class="o">(</span>Y/n<span class="o">)</span>
+&gt; Do you want to upload your website using FTP? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; Do you want to upload your website using SSH? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; Do you want to upload your website using Dropbox? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; Do you want to upload your website using S3? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; Do you want to upload your website using Rackspace Cloud Files? <span class="o">(</span>y/N<span class="o">)</span>
+&gt; Do you want to upload your website using GitHub Pages? <span class="o">(</span>y/N<span class="o">)</span>
+Done. Your new project is available at /Users/pjhuang/pelican_demo
 </pre></div>
             
             
