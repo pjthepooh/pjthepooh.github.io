@@ -4654,7 +4654,7 @@ kArSnsDlY4lAIpAIJAKJQCKQCCQCiUAicPkQ+P+EAS79FLt1LAAAAABJRU5ErkJggg=="
 &lt;p&gt;The R code below is my own version of RANSAC which does not chagne its principle. This is just first draft of the code for prototye. Please review some materials (or at least &lt;a href="https://en.wikipedia.org/wiki/Random_sample_consensus"&gt;Wikipedia&lt;/a&gt;) about this technique for more details.&lt;/p&gt;
 &lt;p&gt;Note:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;MSE is used for goodness of fit of a model&lt;/li&gt;
+&lt;li&gt;MAE is used for goodness of fit of a model&lt;/li&gt;
 &lt;li&gt;The probablity that the algorithm selects only inliears in some iteration is set to be 0.99 to solve for the maximum number of iteration, k.&lt;/li&gt;
 &lt;li&gt;The initial threshold value is set to be the median of absolute errors of a model fitted using all data points.&lt;/li&gt;
 &lt;li&gt;Default noise ratio is 0.7 to derive other parameters if they are not provided.&lt;/li&gt;
