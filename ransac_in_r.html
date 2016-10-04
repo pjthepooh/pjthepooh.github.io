@@ -86,8 +86,8 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Random sample consensus (RANSAC) is one of the techniques that estimate model parameters while the data contains outliers. This technique is not very famous in statistical field, but has been widely used in computer vision. But Why? This is also something I want to discuss in this post.</p>
-<p>A year ago I was working on a project written in R, and wanted to use this technique; However, I was not able to find a package or immediate code in R, but in many other languages such as Matlab, Python and etc. RANSAC's idea is intuitive and the implementation is simple, so I decided to code it up, but I have not actually worked on it until now.</p>
+<p>Random sample consensus (RANSAC) is one of the techniques that estimate model parameters while the data contains outliers. This technique is not very famous in statistical field, but has been widely used in computer vision. But why? This is also something I want to discuss in this post.</p>
+<p>A year ago I was working on a project written in R, and wanted to use this technique; however, I was not able to find a package or immediate code in R, but in many other languages such as Matlab, Python and etc. RANSAC's idea is intuitive and the implementation is simple, so I decided to code it up, but I had not actually worked on it until now.</p>
 
 </div>
 </div>
@@ -114,7 +114,7 @@
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>First, we need to generate a dataset with trend and noise components, where the trend is 'clean' data points with strong signal and the noise is something will potentially damage the signal. The noise data is uniformly distributed in a square grid as you can see below. 9 datasets are generated with different noise-to-clean ratios.</p>
+<p>First, we need to generate a dataset with trend and noise components, where the trend is 'clean' data points with strong signal and the noise is something that will potentially damage the signal. The noise data is uniformly distributed in a square grid as you can see below. 9 datasets are generated with different noise-to-clean ratios.</p>
 
 </div>
 </div>
@@ -4723,11 +4723,11 @@ kArSnsDlY4lAIpAIJAKJQCKQCCQCiUAicPkQ+P+EAS79FLt1LAAAAABJRU5ErkJggg=="
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The R code below is my own version of RANSAC which does not chagne its principle. This is just first draft of the code for prototye. Please review some materials (or at least <a href="https://en.wikipedia.org/wiki/Random_sample_consensus">Wikipedia</a>) about this technique for more details.</p>
+<p>The R code below is my own version of RANSAC which does not change its principle. This is the first draft of the code for prototype. Please review some materials (or at least <a href="https://en.wikipedia.org/wiki/Random_sample_consensus">Wikipedia</a>) about this technique for more details.</p>
 <p>Note:</p>
 <ul>
 <li>MAE is used for goodness of fit of a model</li>
-<li>The probablity that the algorithm selects only inliears in some iteration is set to be 0.99 to solve for the maximum number of iteration, k.</li>
+<li>The probablity that the algorithm selects only inliers in some iteration is set to be 0.99 to solve for the maximum number of iteration, k.</li>
 <li>The initial threshold value is set to be the median of absolute errors of a model fitted using all data points.</li>
 <li>Default noise ratio is 0.7 to derive other parameters if they are not provided.</li>
 </ul>
@@ -10961,9 +10961,9 @@ EIAABCAAgdwj8P+rw2eZcVh09wAAAABJRU5ErkJggg=="
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The blue lines are the regular regressions using all data points, so of course they do not fit the trend well.</p>
+<p>The blue lines are regular OLS regressions using all data points, so of course they do not fit the trend well.</p>
 <p>The red points are the inliers selected by the algorithm, and the green lines are best fits.</p>
-<p>As you can see, RANSAC is able to detect the trend even with high noise-to-clean ratio. It only fails on the last one, where noise ratio is 10:1. If you further optimize the parameters, the algorithm may pass it.</p>
+<p>As you can see, RANSAC is able to detect the trend even with high noise rate. It only fails on the last one, where noise-to-clean ratio is 10:1. If you further optimize the parameters, the algorithm may not fail.</p>
 
 </div>
 </div>
@@ -10982,8 +10982,8 @@ EIAABCAAgdwj8P+rw2eZcVh09wAAAABJRU5ErkJggg=="
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Go back to the question: why is RANSAC not widely used in statistics field?</p>
-<p>First there are strong reasons why it is being used in computer vision. There is a concept of noise in CV, where image noise should not give any information to an image. On ther other hand, Ransac discards a large portion of data, making no attempt to accommodate the outliers. In simple word, it treats the detected outliers that genuinely don't belong to the sample, which is somehow against of the philosophy of statistics. Not many statistical approaches attempt to do so. Also, there are many other robust estimation techniques that more obey statistical philosophy and perform well.</p>
+<p>Going back to the question: why is RANSAC not widely used in statistics field?</p>
+<p>There are strong reasons why it is being used in computer vision. There is a concept of noise in CV, where image noise should not give any information to an image. On ther other hand, RANSAC discards a large portion of data, making no attempt to accommodate the outliers. In simple word, it treats the detected outliers that genuinely don't belong to the sample, which is somehow against the philosophy of statistics. Not many statistical approaches attempt to do so. Also, there are many other well-performing robust estimation techniques that better obey statistical philosophy.</p>
 
 </div>
 </div>
@@ -11002,8 +11002,8 @@ EIAABCAAgdwj8P+rw2eZcVh09wAAAABJRU5ErkJggg=="
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>RANSAC is a quick, simple, intuitive approach for many statistical analyses such as anomaly detection, forecasting, pattern recognition and etc. As a person who loves statistics and data, we should put it in our tool set.</p>
-<p>Hope this is helpful and please let me know regarding any questions about this post.</p>
+<p>RANSAC is a quick, simple, intuitive approach for many statistical analyses such as anomaly detection, forecasting, pattern recognition and etc. As people who love statistics and data, we should put it in our tool set.</p>
+<p>Hope this is helpful and please let me know of any questions regarding this post.</p>
 
 </div>
 </div>
