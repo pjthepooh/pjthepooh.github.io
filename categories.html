@@ -30,6 +30,18 @@
         <link href="http://www.pjthepooh.com/feeds/data-science.atom.xml" type="application/atom+xml" rel="alternate" title="PJ the Pooh - Data Science Category Atom Feed" />
         <link href="http://www.pjthepooh.com/feeds/geek.atom.xml" type="application/atom+xml" rel="alternate" title="PJ the Pooh - Geek Category Atom Feed" />
         <link href="http://www.pjthepooh.com/feeds/life.atom.xml" type="application/atom+xml" rel="alternate" title="PJ the Pooh - Life Category Atom Feed" />
+        <!-- Using MathJax, with the delimiters $ -->
+        <!-- Conflict with pygments for the .mo and .mi -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          "HTML-CSS": {
+          styles: {
+          ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+          },
+          tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+          });
+        </script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     </head>
     <body>
         <div id="content-sans-footer">
@@ -46,6 +58,7 @@
                         <ul class="nav pull-right top-menu">
                             <li ><a href="http://www.pjthepooh.com">Home</a></li>
                             <li ><a href="http://www.pjthepooh.com/pages/../about.html">About</a></li>
+                            <li ><a href="http://www.pjthepooh.com/pages/../bookmarks.html">Bookmarks</a></li>
                             <li  class="active"><a href="http://www.pjthepooh.com/categories.html">Categories</a></li>
                             <li ><a href="http://www.pjthepooh.com/tags.html">Tags</a></li>
                             <li ><a href="http://www.pjthepooh.com/archives.html">Archives</a></li>
@@ -72,12 +85,14 @@
             <div class="accordion-group">
                 <div class="accordion-heading">
                     <a class="accordion-toggle list-of-categories" data-toggle="collapse" data-parent="#accordion2" href="#data-science-ref">
-                        Data Science<span>2</span>
+                        Data Science<span>3</span>
                     </a>
                 </div>
                 <div id="data-science-ref" class="accordion-body collapse">
                     <div class="accordion-inner">
                         <ul class="list-articles-category">
+ 
+                            <li><time pubdate="pubdate" datetime="2017-03-04T20:00:00-08:00">Sat 04 March 2017</time><a href="http://www.pjthepooh.com/poker-shuffle-simulation.html">Poker Shuffle Simulation  </a></li>
  
                             <li><time pubdate="pubdate" datetime="2016-10-02T23:20:00-07:00">Sun 02 October 2016</time><a href="http://www.pjthepooh.com/ransac_in_r.html">RANSAC in R  </a></li>
  

@@ -18,6 +18,18 @@
         <link rel="stylesheet" type="text/css" href="http://www.pjthepooh.com/theme/css/elegant.css" media="screen">
         <link rel="stylesheet" type="text/css" href="http://www.pjthepooh.com/theme/css/custom.css" media="screen">
         <link href="http://www.pjthepooh.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PJ the Pooh - Full Atom Feed" />
+        <!-- Using MathJax, with the delimiters $ -->
+        <!-- Conflict with pygments for the .mo and .mi -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          "HTML-CSS": {
+          styles: {
+          ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+          },
+          tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+          });
+        </script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     </head>
     <body>
         <div id="content-sans-footer">
@@ -34,6 +46,7 @@
                         <ul class="nav pull-right top-menu">
                             <li ><a href="http://www.pjthepooh.com">Home</a></li>
                             <li ><a href="http://www.pjthepooh.com/pages/../about.html">About</a></li>
+                            <li ><a href="http://www.pjthepooh.com/pages/../bookmarks.html">Bookmarks</a></li>
                             <li ><a href="http://www.pjthepooh.com/categories.html">Categories</a></li>
                             <li ><a href="http://www.pjthepooh.com/tags.html">Tags</a></li>
                             <li ><a href="http://www.pjthepooh.com/archives.html">Archives</a></li>

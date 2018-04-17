@@ -16,8 +16,6 @@
 <meta property="og:description" content="" />
 <meta property="og:site_name" content="PJ the Pooh" />
 <meta property="og:article:author" content="PJ" />
-<meta property="og:article:published_time" content="2016-09-14T10:20:00-07:00" />
-<meta property="" content="2016-09-14T19:30:00-07:00" />
 <meta name="twitter:title" content="About ">
 <meta name="twitter:description" content="">
 
@@ -30,6 +28,18 @@
         <link rel="stylesheet" type="text/css" href="http://www.pjthepooh.com/theme/css/elegant.css" media="screen">
         <link rel="stylesheet" type="text/css" href="http://www.pjthepooh.com/theme/css/custom.css" media="screen">
         <link href="http://www.pjthepooh.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PJ the Pooh - Full Atom Feed" />
+        <!-- Using MathJax, with the delimiters $ -->
+        <!-- Conflict with pygments for the .mo and .mi -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          "HTML-CSS": {
+          styles: {
+          ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+          },
+          tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+          });
+        </script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     </head>
     <body>
         <div id="content-sans-footer">
@@ -46,6 +56,7 @@
                         <ul class="nav pull-right top-menu">
                             <li ><a href="http://www.pjthepooh.com">Home</a></li>
                             <li  class="active"><a href="http://www.pjthepooh.com/pages/../about.html">About</a></li>
+                            <li ><a href="http://www.pjthepooh.com/pages/../bookmarks.html">Bookmarks</a></li>
                             <li ><a href="http://www.pjthepooh.com/categories.html">Categories</a></li>
                             <li ><a href="http://www.pjthepooh.com/tags.html">Tags</a></li>
                             <li ><a href="http://www.pjthepooh.com/archives.html">Archives</a></li>
@@ -69,7 +80,7 @@
 <div class="row-fluid">
         <div class="span8 offset2 article-content">
 
-            <p>My name is PJ, born and raised in <a href="https://en.wikipedia.org/wiki/Guangzhou">Guangzhou, China</a>. I'm currently a <a href="https://en.wikipedia.org/wiki/Data_science">data scientist</a> in <a href="https://en.wikipedia.org/wiki/Silicon_Valley">Silicon Valley</a>, immersing myself in a world of science and new technology. I truly believe that most great decisions are driven by data. I'm willing to learn as much as I can to become a full-stack data scientist.</p>
+            <p>My name is PJ (黄鹏骏), born and raised in <a href="https://en.wikipedia.org/wiki/Guangzhou">Guangzhou, China</a>. I'm currently a <a href="https://en.wikipedia.org/wiki/Data_science">data scientist</a> in <a href="https://en.wikipedia.org/wiki/Silicon_Valley">Silicon Valley</a>, immersing myself in a world of science and new technology. I truly believe that most great decisions are driven by data. I'm willing to learn as much as I can to become a full-stack data scientist.</p>
 <p>I love sports such as swimming, basketball, snowboarding and bicycling. To be a better version of myself, I love to travel! My another big interest is teaching. I believe that sharing knowledge takes a key role in human society.</p>
 <p>As a first-generation immigrant in U.S., I would love to contribute my little effort to help the <a href="https://en.wikipedia.org/wiki/History_of_Chinese_Americans">Chinese immigrant</a> community.</p>
 <p>I speak Cantonese, Mandarin and English.</p>
@@ -113,7 +124,7 @@
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
 <h4>Keep in Touch</h4>
-    <a href="mailto:pjthepooh@gmail.com" title="My Email Address" class="sidebar-social-links" target="_blank">
+    <a href="mailto:huangpj1110@gmail.com" title="My Email Address" class="sidebar-social-links" target="_blank">
     <i class="fa fa-envelope sidebar-social-links"></i></a>
     <a href="https://www.linkedin.com/in/pjhuang" title="My Linkedin Profile" class="sidebar-social-links" target="_blank">
     <i class="fa fa-linkedin sidebar-social-links"></i></a>

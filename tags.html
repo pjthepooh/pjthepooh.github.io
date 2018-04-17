@@ -27,6 +27,18 @@
         <link rel="stylesheet" type="text/css" href="http://www.pjthepooh.com/theme/css/custom.css" media="screen">
         <link href="http://www.pjthepooh.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="PJ the Pooh - Full Atom Feed" />
 
+        <!-- Using MathJax, with the delimiters $ -->
+        <!-- Conflict with pygments for the .mo and .mi -->
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+          "HTML-CSS": {
+          styles: {
+          ".MathJax .mo, .MathJax .mi": {color: "black ! important"}}
+          },
+          tex2jax: {inlineMath: [['$','$'], ['\\\\(','\\\\)']],processEscapes: true}
+          });
+        </script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
     </head>
     <body>
         <div id="content-sans-footer">
@@ -43,6 +55,7 @@
                         <ul class="nav pull-right top-menu">
                             <li ><a href="http://www.pjthepooh.com">Home</a></li>
                             <li ><a href="http://www.pjthepooh.com/pages/../about.html">About</a></li>
+                            <li ><a href="http://www.pjthepooh.com/pages/../bookmarks.html">Bookmarks</a></li>
                             <li ><a href="http://www.pjthepooh.com/categories.html">Categories</a></li>
                             <li  class="active"><a href="http://www.pjthepooh.com/tags.html">Tags</a></li>
                             <li ><a href="http://www.pjthepooh.com/archives.html">Archives</a></li>
@@ -99,13 +112,25 @@
             <a href="#pelican-ref">pelican<span>2</span></a>
             </li>
             <li>
-            <a href="#python-ref">python<span>3</span></a>
+            <a href="#probability-ref">probability<span>1</span></a>
+            </li>
+            <li>
+            <a href="#python-ref">python<span>4</span></a>
             </li>
             <li>
             <a href="#r-ref">r<span>1</span></a>
             </li>
             <li>
+            <a href="#random-ref">random<span>1</span></a>
+            </li>
+            <li>
             <a href="#samples-ref">samples<span>1</span></a>
+            </li>
+            <li>
+            <a href="#simulation-ref">simulation<span>1</span></a>
+            </li>
+            <li>
+            <a href="#statistics-ref">statistics<span>1</span></a>
             </li>
             <li>
             <a href="#tokyo-ref">tokyo<span>1</span></a>
@@ -179,8 +204,14 @@
             <li><time pubdate="pubdate" datetime="2016-09-25T20:20:00-07:00">Sun 25 September 2016</time><a href="http://www.pjthepooh.com/i-chose-pelican.html">I Chose Pelican  </a></li>
         </ul>
 
+        <h2 id="probability-ref" class="tag-title">probability</h2>
+        <ul class="articles-in-tag list-articles-category">
+            <li><time pubdate="pubdate" datetime="2017-03-04T20:00:00-08:00">Sat 04 March 2017</time><a href="http://www.pjthepooh.com/poker-shuffle-simulation.html">Poker Shuffle Simulation  </a></li>
+        </ul>
+
         <h2 id="python-ref" class="tag-title">python</h2>
         <ul class="articles-in-tag list-articles-category">
+            <li><time pubdate="pubdate" datetime="2017-03-04T20:00:00-08:00">Sat 04 March 2017</time><a href="http://www.pjthepooh.com/poker-shuffle-simulation.html">Poker Shuffle Simulation  </a></li>
             <li><time pubdate="pubdate" datetime="2016-10-01T20:20:00-07:00">Sat 01 October 2016</time><a href="http://www.pjthepooh.com/how-to-make-a-blog-with-pelican.html">How to Make a Blog with Pelican  </a></li>
             <li><time pubdate="pubdate" datetime="2016-09-25T20:20:00-07:00">Sun 25 September 2016</time><a href="http://www.pjthepooh.com/i-chose-pelican.html">I Chose Pelican  </a></li>
             <li><time pubdate="pubdate" datetime="2016-09-15T20:20:00-07:00">Thu 15 September 2016</time><a href="http://www.pjthepooh.com/python_visualization.html">Python Visualization  </a></li>
@@ -191,9 +222,24 @@
             <li><time pubdate="pubdate" datetime="2016-10-02T23:20:00-07:00">Sun 02 October 2016</time><a href="http://www.pjthepooh.com/ransac_in_r.html">RANSAC in R  </a></li>
         </ul>
 
+        <h2 id="random-ref" class="tag-title">random</h2>
+        <ul class="articles-in-tag list-articles-category">
+            <li><time pubdate="pubdate" datetime="2017-03-04T20:00:00-08:00">Sat 04 March 2017</time><a href="http://www.pjthepooh.com/poker-shuffle-simulation.html">Poker Shuffle Simulation  </a></li>
+        </ul>
+
         <h2 id="samples-ref" class="tag-title">samples</h2>
         <ul class="articles-in-tag list-articles-category">
             <li><time pubdate="pubdate" datetime="2016-10-02T23:20:00-07:00">Sun 02 October 2016</time><a href="http://www.pjthepooh.com/ransac_in_r.html">RANSAC in R  </a></li>
+        </ul>
+
+        <h2 id="simulation-ref" class="tag-title">simulation</h2>
+        <ul class="articles-in-tag list-articles-category">
+            <li><time pubdate="pubdate" datetime="2017-03-04T20:00:00-08:00">Sat 04 March 2017</time><a href="http://www.pjthepooh.com/poker-shuffle-simulation.html">Poker Shuffle Simulation  </a></li>
+        </ul>
+
+        <h2 id="statistics-ref" class="tag-title">statistics</h2>
+        <ul class="articles-in-tag list-articles-category">
+            <li><time pubdate="pubdate" datetime="2017-03-04T20:00:00-08:00">Sat 04 March 2017</time><a href="http://www.pjthepooh.com/poker-shuffle-simulation.html">Poker Shuffle Simulation  </a></li>
         </ul>
 
         <h2 id="tokyo-ref" class="tag-title">tokyo</h2>
